@@ -38,6 +38,6 @@ end
 
 def full?(board)
   board.all? do |index|
-    board[index] != " " && board[index] != ""
+    index == "X" || index == "O"
   end
 end
