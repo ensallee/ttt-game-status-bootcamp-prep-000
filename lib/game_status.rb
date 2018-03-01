@@ -60,9 +60,9 @@ end
 
 def winner(board)
   array = won?(board)
-  if array[0]="X"
+  if array[0] == "X"
     return "X"
-  elsif array[0]="O"
+  elsif array[0] == "O"
     return "O"
   else
     return nil
