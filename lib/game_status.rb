@@ -59,12 +59,14 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board)
-  if array[0] == "X"
-    return "X"
-  elsif array[0] == "O"
-    return "O"
-  else
-    return nil
+  if won?(board)
+    array = won?(board)
+      if array[0] == "X"
+          return "X"
+      elsif array[0] == "O"
+          return "O"
+      else
+          return nil
+      end
   end
 end
