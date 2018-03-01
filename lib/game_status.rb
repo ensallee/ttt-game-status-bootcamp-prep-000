@@ -59,7 +59,7 @@ def over?(board)
 end
 
 def winner(board)
-  won? = array
+  array = won?
   if array[0]="X"
     return "X"
   elsif array[0]="O"
