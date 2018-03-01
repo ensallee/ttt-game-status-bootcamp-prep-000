@@ -36,10 +36,6 @@ end
 
 def full?(board)
   board.all? do |index|
-    if board[index] != " " && board[index] != ""
-      true
-    else
-      false
-    end
+    board[index] != " " && board[index] != ""
   end
 end
