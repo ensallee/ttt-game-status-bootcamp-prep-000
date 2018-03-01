@@ -61,7 +61,7 @@ end
 def winner(board)
   if won?(board)
     array = won?(board)
-      if array[0] == "X"
+      if board[array[0]] == "X" 
           return "X"
       elsif array[0] == "O"
           return "O"
